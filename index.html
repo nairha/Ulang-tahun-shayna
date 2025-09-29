@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Ulang Tahun Shayna - Hu Tao Special</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="birthday-container">
+        <!-- Background Particles -->
+        <div class="particles-container" id="particles"></div>
+        
+        <!-- Initial Surprise Card -->
+        <div class="surprise-card" id="surpriseCard">
+            <div class="card-content">
+                <div class="gift-icon">
+                    <i class="fas fa-gift"></i>
+                </div>
+                
+                <h1 class="surprise-title">Ada Kejutan Spesial Nih buat kamu!</h1>
+                <p class="surprise-text">
+                    Seseorang yang sangat istimewa sedang berulang tahun hari ini...<br>
+                    Klik untuk membuka kejutan dari ku! 🔥
+                </p>
+                
+                <button class="reveal-btn" onclick="revealBirthdayCard()">
+                    <i class="fas fa-sparkles"></i>
+                    Buka Kejutan!
+                    <i class="fas fa-fire"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Main Birthday Card -->
+        <div class="main-card hidden" id="mainCard">
+            <div class="birthday-grid">
+                <!-- Left Side - Shayna's Card -->
+                <div class="shayna-card">
+                    <div class="card-header">
+                        <div class="heart-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h2 class="celebrant-name">Shayna</h2>
+                        <div class="birthday-badge">
+                            <i class="fas fa-star"></i>
+                            <span>Selamat Ulang tahun</span>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="wishes-container">
+                        <h3 class="wishes-title">Ucapan Selamat</h3>
+                        <div class="wish-display">
+                            <p class="current-wish" id="currentWish">Selamat ulang tahun, Shayna! 🎂</p>
+                        </div>
+                        <button class="next-wish-btn" onclick="nextWish()">
+                            <i class="fas fa-sparkles"></i>
+                            Ucapan Selanjutnya
+                        </button>
+                    </div>
+
+                    <!-- Cute Character Images -->
+                    <div class="character-gallery">
+                        <img src="hutao/menulis.png" alt="Cute Character" class="chibi-img chibi-1">
+                        <img src="hutao/ternayat begitu.png" alt="Cute Character" class="chibi-img chibi-2">
+                        <img src="hutao/menagantuk.png" alt="Cute Character" class="chibi-img chibi-3">
+                    </div>
+                </div>
+                
+                <!-- Right Side - Hu Tao's Message & Stats -->
+                <div class="right-panel">
+                    <!-- Hu Tao's Message -->
+                    <div class="hutao-message-card">
+                        <div class="message-header">
+                            <i class="fas fa-fire"></i>
+                            <h3>Pesan Khusus dari Nairha</h3>
+                        </div>
+                        
+                        <div class="message-content">
+                            <p class="hutao-message">
+                                "Halo bintang ulang tahun! nairha di sini dengan sedikit keajaiban api ulang tahun! 
+                                Semoga harimu dipenuhi dengan kegembiraan yang meriah dan di iringi doa ku pada yang mahakuasa 
+                                Ingat, hidup itu berharga - jadi rayakanlah dengan sepenuh hati!.  
+                                Selamat Ulang Tahun, Shayna! عيد ميلاد سعيد  🔥✨"
+                            </p>
+                        </div>
+                        
+                        <div class="liyue-signature">
+                            <i class="fas fa-heart"></i>
+                            <span>Dengan cinta dari Nairha</span>
+                            <i class="fas fa-heart"></i>
+                        </div>
+
+                        <!-- Birthday Stickers -->
+                        <div class="sticker-collection">
+                            <img src="hutao/Ceria.png" alt="Birthday Sticker" class="birthday-sticker sticker-1">
+                            <img src="hutao/Chuuu.png" alt="Birthday Sticker" class="birthday-sticker sticker-2">
+                            <img src="hutao/lihat ini.png" alt="Anime Sticker" class="birthday-sticker sticker-3">
+                        </div>
+                    </div>
+                    
+                    <!-- Birthday Stats -->
+                    <div class="stats-card">
+                        <h3 class="stats-title">Statistik Perayaan Ulang Tahun</h3>
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <div class="stat-value">∞</div>
+                                <div class="stat-label">Ucapan</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">1</div>
+                                <div class="stat-label">Shayna Luar Biasa</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">100%</div>
+                                <div class="stat-label">Kebahagiaan</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">🔥</div>
+                                <div class="stat-label">Keajaiban Hu Tao</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Toast Notification -->
+        <div class="toast" id="toast">
+            <div class="toast-content">
+                <div class="toast-title">Selamat Ulang Tahun Shayna! 🎉</div>
+                <div class="toast-message">Kejutanmu sudah dibuka dengan berkah Hu Tao!</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
